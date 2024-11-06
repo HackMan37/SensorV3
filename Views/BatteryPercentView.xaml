@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SensorV3.Views.BatteryPercentView">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Label
+                Text="{Binding BatteryStatus}"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="{Binding ChargeLevel}"
+                Style="{StaticResource SubHeadline}" />
+
+            <Button
+                Text="Ver porcentaje de bateria"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Command="{Binding CheckBatteryCommand}"
+                HorizontalOptions="Fill"
+                WidthRequest="200" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SensorV3.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SensorV3"
+    xmlns:views="clr-namespace:SensorV3.Views"
+    Title="SensorV3">
+
+    <FlyoutItem Title="Inicio" Route="mainpage">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='home_dark.png', Dark='home_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Inicio">
+                <local:MainPage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Porcentaje de Bateria" Route="batterypercent">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='battery_dark.png', Dark='battery_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Porcentaje de Bateria">
+                <views:BatteryPercentView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ver información dispositivo" Route="deviceinformation">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='information_dark.png', Dark='information_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Ver información dispositivo">
+                <views:DeviceInformationView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Linterna" Route="flashlight">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='flashlight_dark.png', Dark='flashlight_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Linterna">
+                <views:FlashLightView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ubicación Actual" Route="location">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='location_dark.png', Dark='location_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Ubicación Actual">
+                <views:CurrentLocationView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="HapticFeedback" Route="hapticfeedback">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='haptic_dark.png', Dark='haptic_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="HapticFeedback">
+                <views:HapticFeedbackView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Vibración" Route="vibration">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='vibrate_dark.png', Dark='vibrate_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Vibración">
+                <views:VibrationView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Barometro" Route="barometer">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='barometer_dark.png', Dark='barometer_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Barometro">
+                <views:BarometerView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Agitar" Route="shake">
+        <FlyoutItem.Icon>
+            <FileImageSource File="{AppThemeBinding Light='shake_dark.png', Dark='shake_light.png'}"/>
+        </FlyoutItem.Icon>
+        <Tab>
+            <ShellContent Title="Agitar">
+                <views:ShakeView/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

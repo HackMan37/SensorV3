@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SensorV3.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="photomaui.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Mi foto" />
+
+            <Label
+                Text="Mi nombre es Ranfiel Pérez Pichardo"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                SemanticProperties.Description="Mi nombre" />
+
+            <Label
+                Text="Matricula: 2020-0268"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Matricula" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
